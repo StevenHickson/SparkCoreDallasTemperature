@@ -22,6 +22,8 @@
 
 #if defined(ARDUINO) && ARDUINO >= 100
     #include <OneWire.h>
+#elif defined(PARTICLE)
+    #include <OneWire.h>
 #elif defined(SPARK) or defined(STM32F10X_MD)
     #include "application.h"
     #include <OneWire.h>
